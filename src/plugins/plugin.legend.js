@@ -369,7 +369,7 @@ export class Legend extends Element {
 
     const fillText = function(x, y, legendItem) {
       renderText(ctx, legendItem.text, x, y + (itemHeight / 2), labelFont, {
-        strikethrough: legendItem.hidden,
+        color: legendItem.hiddenColor,
         textAlign: rtlHelper.textAlign(legendItem.textAlign)
       });
     };
